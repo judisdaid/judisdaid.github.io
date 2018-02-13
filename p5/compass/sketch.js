@@ -9,7 +9,7 @@ function draw() {
   //rotateY(radians(rotationY));
   fill(50);
   textSize(100)
-  //textAlign(CENTER)
+  textAlign(CENTER)
    text("text",500,500)
  text(rotationZ, 600,600)
 }
