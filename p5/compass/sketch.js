@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(100, 100, WEBGL);
+  createCanvas(100, 100);
 }
 
 function draw() {
@@ -7,5 +7,5 @@ function draw() {
   rotateZ(radians(rotationZ));
   //rotateX(radians(rotationX));
   //rotateY(radians(rotationY));
-  box(200, 200, 200);
+ text(0,0,radians(rotationZ))
 }
