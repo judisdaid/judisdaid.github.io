@@ -10,6 +10,6 @@ function draw() {
   fill(50);
   textSize(100)
   //textAlign(CENTER)
-   text(100,800,"test")
- text(200,600,radians(rotationZ))
+   text(500,500,"test")
+ text(600,600,radians(rotationZ))
 }
