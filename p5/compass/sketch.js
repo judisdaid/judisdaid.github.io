@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(100, 100);
+  createCanvas(width(), height());
 }
 
 function draw() {
@@ -10,5 +10,5 @@ function draw() {
   fill(50);
   textSize(32)
   textAlign(CENTER)
- text(0,0,radians(rotationZ))
+ text(0,200,radians(rotationZ))
 }
