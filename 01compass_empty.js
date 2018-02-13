@@ -7,8 +7,13 @@ oriented = function(e) {
         }   else  { 
             compassHeading = e.alpha;
         }
-        
-         text_area.textContent = compassHeading;
+
+
+        if(compassHeading > 315 || compassHeading < 45) {
+                text_area.textContent = compassHeading;
+        }
+
+         
         //calls function to alter content based on heading
        // myOrientation();
     }
@@ -19,7 +24,7 @@ oriented = function(e) {
 
 
 //find the tag on the html page to put text into
-var text_area = document.getElementById("compass_content");
+text_area = document.getElementById("compass_content");
 
 
     function myOrientation(){
