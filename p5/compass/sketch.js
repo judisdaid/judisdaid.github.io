@@ -11,5 +11,5 @@ function draw() {
   textSize(32)
   textAlign(CENTER)
    text(0,windowHeight/2,"test")
- text(200,200,radians(rotationZ))
+ text(200,600,radians(rotationZ))
 }
