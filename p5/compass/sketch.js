@@ -1,3 +1,7 @@
+function setup() {
+	createCanvas(windowWidth, windowHeight, WEBGL);
+}
+
 var value = 0;
 function draw() {
   fill(value);
