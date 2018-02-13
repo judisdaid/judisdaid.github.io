@@ -2,14 +2,14 @@ function setup() {
 	createCanvas(windowWidth, windowHeight, P2D);
 }
 
-var value = 0;
 function draw() {
-  fill(value);
-  rect(25, 25, 50, 50);
-}
-function deviceShaken() {
-  value = value + 5;
-  if (value > 255) {
-    value = 0;
-  }
+  background(255);
+
+  //rotateX(radians(rotationX));
+  //rotateY(radians(rotationY));
+  fill(50);
+  textSize(100)
+  textAlign(CENTER)
+   text(100,400,"test")
+ text(200,600,radians(rotationZ))
 }
