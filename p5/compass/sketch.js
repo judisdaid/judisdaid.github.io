@@ -10,6 +10,6 @@ function draw() {
   fill(50);
   textSize(32)
   textAlign(CENTER)
-   text(0,displayWidth/2,"test")
+   text(0,windowHeight/2,"test")
  text(200,200,radians(rotationZ))
 }
