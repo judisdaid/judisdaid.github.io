@@ -5,24 +5,24 @@ oriented = function(e) {
         if(e.webkitCompassHeading) {
             compassHeading = e.webkitCompassHeading;
         }   else  { 
-            compassHeading = e.alpha;
+            compassHeading = 360 - e.alpha;
         }
 
 
         if(compassHeading > 315 || compassHeading < 45) {
-                text_area.textContent = "north";
+                text_area.textContent = "north 2";
         }
 
         if(compassHeading >= 45 && compassHeading < 135) {
-                text_area.textContent = "east";
+                text_area.textContent = "east 2";
         }
 
         if(compassHeading >= 135 && compassHeading < 225) {
-                text_area.textContent = "south";
+                text_area.textContent = "south 2";
         }
 
         if(compassHeading >= 225 && compassHeading < 315) {
-                text_area.textContent = "west";
+                text_area.textContent = "west 2";
         }
 
 
