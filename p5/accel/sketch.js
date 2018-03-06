@@ -22,7 +22,7 @@ function draw() {
   text(round(abs(accelerationX)) + "\n" + round(abs(accelerationY)), 0,0)
 
   text("threshold: " + threshold, 0, 300)
-   text(count, 0, 300)
+   text(count, 0, 500)
 
   if(round(abs(accelerationX)) > threshold)  count++
   
