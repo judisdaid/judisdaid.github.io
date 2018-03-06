@@ -10,6 +10,7 @@ function draw() {
   fill(50);
   textSize(100)
   textAlign(CENTER)
-   text("text",500,500)
- text("accelerationx:" + accelerationX, 600,600)
+  translate(width/2, 30)
+ text("accelerationx:" + accelerationX, 0,0)
+ text("accelerationx:" + accelerationY, 0,20)
 }
