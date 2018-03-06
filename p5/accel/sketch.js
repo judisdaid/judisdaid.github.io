@@ -21,7 +21,7 @@ function draw() {
 
   text(round(abs(accelerationX)) + "\n" + round(abs(accelerationY)), 0,0)
 
-  if(round(abs(accelerationX)) > 3) text(count, 0, 300)
+  if(round(abs(accelerationX)) > threshold) text(count, 0, 300)
   
 
 }
