@@ -12,6 +12,10 @@ function draw() {
   textSize(100)
   textAlign(CENTER)
   translate(width/2, 200)
- text("accelerationx: \n" + accelerationX + "\n accelerationY: \n" + accelerationY + "\n accelerationZ: \n" + accelerationZ, 0,0)
+ 
+
+  if(abs(accelerationX) > 3 || abs(accelerationY) > 3) {
+  	text("accelerationx: \n" + accelerationX + "\n accelerationY: \n" + accelerationY + "\n accelerationZ: \n" + accelerationZ, 0,0)
+  }
 
 }
