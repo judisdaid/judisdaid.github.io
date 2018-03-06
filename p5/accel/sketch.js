@@ -11,6 +11,6 @@ function draw() {
   textSize(100)
   textAlign(CENTER)
   translate(width/2, 50)
- text("accelerationx: \n" + accelerationX + "accelerationY: \n" + accelerationY + "accelerationZ: \n" + accelerationZ, 0,0)
+ text("accelerationx: \n" + accelerationX + "\naccelerationY: \n" + accelerationY + "\naccelerationZ: \n" + accelerationZ, 0,0)
 
 }
