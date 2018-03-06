@@ -20,7 +20,7 @@ function draw() {
 
   text(round(abs(accelerationX)) + "\n" + round(abs(accelerationY)), 0,0)
 
-  if(round(abs(accelerationX)) > 3) text("!", 0, 200)
+  if(round(abs(accelerationX)) > 3) text("!!!!!", 0, 200)
   
 
 }
