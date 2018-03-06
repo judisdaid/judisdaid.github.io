@@ -3,7 +3,7 @@ var threshold;
 
 function setup() {
 	createCanvas(window.innerWidth, window.innerHeight, P2D);
-	threshold = 2
+	threshold = 5
 	count = 0
 
 }
@@ -21,7 +21,8 @@ function draw() {
 
   text(round(abs(accelerationX)) + "\n" + round(abs(accelerationY)), 0,0)
 
-  text(count, 0, 300)
+  text("threshold: " + threshold, 0, 300)
+   text(count, 0, 300)
 
   if(round(abs(accelerationX)) > threshold)  count++
   
