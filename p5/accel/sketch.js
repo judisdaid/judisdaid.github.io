@@ -14,8 +14,8 @@ function draw() {
   translate(width/2, 200)
  
 
-  if(abs(accelerationX) > 3 || abs(accelerationY) > 3) {
-  	text("accelerationx: \n" + accelerationX + "\n accelerationY: \n" + accelerationY + "\n accelerationZ: \n" + accelerationZ, 0,0)
+  if(abs(accelerationX) > 2 || abs(accelerationY) > 2) {
+  	text("accelerationx: \n" + accelerationX + "\n accelerationY: \n" + accelerationY, 0,0)
   }
 
 }
