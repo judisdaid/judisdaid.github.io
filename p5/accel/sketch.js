@@ -5,6 +5,7 @@ function setup() {
 	createCanvas(window.innerWidth, window.innerHeight, P2D);
 	threshold = 5
 	count = 0
+	devideOrientation(LANDSCAPE)
 
 }
 
