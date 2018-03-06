@@ -1,6 +1,10 @@
+
+var threshold;
+
 function setup() {
 	createCanvas(window.innerWidth, window.innerHeight, P2D);
-	frmaeRate(10)
+	threshold = 1
+
 }
 
 function draw() {
@@ -14,8 +18,7 @@ function draw() {
   translate(width/2, 200)
  
 
-  if(abs(accelerationX) > 2 || abs(accelerationY) > 2) {
-  	text("accelerationx: \n" + accelerationX + "\n accelerationY: \n" + accelerationY, 0,0)
-  }
+  text(abs(accelerationX) + "\n" + abs(accelerationY), 0,0)
+  
 
 }
