@@ -14,7 +14,7 @@ oriented = function(e) {
         }
 
         if(compassHeading >= 45 && compassHeading < 135) {
-                text_area.textContent = "east 5";
+                text_area.textContent = "eastern <br/> hospitality ";
         }
 
         if(compassHeading >= 135 && compassHeading < 225) {
@@ -27,7 +27,7 @@ oriented = function(e) {
 
        // text_area.textContent = compassHeading;
 
-       
+
 
 
          
