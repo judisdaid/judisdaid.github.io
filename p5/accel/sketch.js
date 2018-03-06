@@ -11,6 +11,6 @@ function draw() {
   textSize(100)
   textAlign(CENTER)
   translate(width/2, 30)
- text("accelerationx:" + accelerationX, 0,0)
- text("accelerationx:" + accelerationY, 0,20)
+ text("accelerationx: <br/>" + accelerationX, 0,0)
+ text("accelerationY:" + accelerationY, 0,20)
 }
