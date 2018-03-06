@@ -18,7 +18,7 @@ function draw() {
   translate(width/2, 200)
  
 
-  text(abs(accelerationX) + "\n" + abs(accelerationY), 0,0)
+  text(round(abs(accelerationX)) + "\n" + round(abs(accelerationY)), 0,0)
   
 
 }
