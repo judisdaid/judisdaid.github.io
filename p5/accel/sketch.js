@@ -11,5 +11,5 @@ function draw() {
   textSize(100)
   textAlign(CENTER)
    text("text",500,500)
- text(rotationZ, 600,600)
+ text(accelerationX, 600,600)
 }
