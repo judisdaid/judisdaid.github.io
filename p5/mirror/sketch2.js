@@ -15,8 +15,6 @@ function draw() {
   translate(displayWidth/2, displayHeight/2)
   image(img, random(-100,100), random(-100,100))
  	
-}
-
 
 }
 
