@@ -15,7 +15,7 @@ function draw() {
   // put drawing code here: runs 60 x per second
   //we need a color for the text
   translate(windowWidth/2, windowHeight/2)
-  image(img, 0,0)
+  image(img, 0,0,windowWidth,windowHeight)
  	
 
 }
