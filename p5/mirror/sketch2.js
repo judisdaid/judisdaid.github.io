@@ -4,7 +4,7 @@ var img
 
 function setup() {
   // put setup code that runs once
- img = loadImage("assets/abba1.jpg")
+ img = loadImage("assets/abba.jpg")
 }
 
 function draw() {
