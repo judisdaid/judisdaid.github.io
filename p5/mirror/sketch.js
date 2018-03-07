@@ -6,6 +6,7 @@ var drawCount;
 
 
 function setup() {
+  console.log("10:49")
   // put setup code that runs once
   mirrorText = "they are at war with the human";
   //split the text into units
