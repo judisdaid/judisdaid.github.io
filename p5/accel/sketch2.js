@@ -1,11 +1,17 @@
 
 var threshold;
+var txts = "ABCDEFG"
+var letters = txts.split("")
+var numLetters = letters.length
+var displayText = "0";
+
 
 function setup() {
 	createCanvas(window.innerWidth, window.innerHeight, P2D);
 	threshold = 8
 	count = 0
-	//devideOrientation(LANDSCAPE)
+
+
 
 }
 
@@ -17,15 +23,15 @@ function draw() {
   fill(50);
   textSize(100)
   textAlign(CENTER)
-  translate(width/2, 200)
  
+  
+  
+   text(displayText, width/2, height/2)
 
-  text(round(abs(accelerationX)) + "\n" + round(abs(accelerationY)), 0,0)
-
-  text("threshold: " + threshold, 0, 300)
-   text("count: " + count, 0, 500)
-
-  if(round(abs(accelerationX)) > threshold)  count++
+  if(round(abs(accelerationX)) > threshold) {
+      displayText = letters[floor(random(numLetters))]
+  
+  }
   
 
 }

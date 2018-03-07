@@ -1,10 +1,11 @@
-
 var threshold;
+var img
 
 function setup() {
 	createCanvas(window.innerWidth, window.innerHeight, P2D);
 	threshold = 8
 	count = 0
+  img = loadImage("assets/abba.jpg"); 
 	//devideOrientation(LANDSCAPE)
 
 }
@@ -17,15 +18,16 @@ function draw() {
   fill(50);
   textSize(100)
   textAlign(CENTER)
-  translate(width/2, 200)
  
 
-  text(round(abs(accelerationX)) + "\n" + round(abs(accelerationY)), 0,0)
+ 
 
-  text("threshold: " + threshold, 0, 300)
-   text("count: " + count, 0, 500)
-
-  if(round(abs(accelerationX)) > threshold)  count++
+  if(round(abs(accelerationX)) > threshold) {
+      //displayText = letters[floor(random(numberOfItems))]
+      //background(random(255),random(255),random(255))
+        image(img, 0,0, width, height)
+  
+  }
   
 
 }

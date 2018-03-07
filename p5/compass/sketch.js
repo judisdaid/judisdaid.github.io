@@ -1,3 +1,6 @@
+var compassHeading = 0;
+var txt = "ABCDEFGH"
+
 function setup() {
 	createCanvas(window.innerWidth, window.innerHeight, P2D);
 }
@@ -10,6 +13,25 @@ function draw() {
   fill(50);
   textSize(100)
   textAlign(CENTER)
-   text("text",500,500)
- text(rotationZ, 600,600)
+  translate(width/2, height/2)
+  
+
+  if(compassHeading >45 && compassHeading <90) {
+  		text(txt,0,0)
+  } else {
+  		text(compassHeading,0,0)
+  }
+
 }
+
+window.addEventListener('deviceorientation', function(e) 
+{
+  alpha = e.alpha;
+  beta = e.beta;
+  gamma = e.gamma;
+  if(e.webkitCompassHeading) {
+            compassHeading = e.webkitCompassHeading;
+        }   else  { 
+            compassHeading = alpha;
+        }
+});
