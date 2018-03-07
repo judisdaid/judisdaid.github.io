@@ -4,9 +4,9 @@ var img
 
 function setup() {
   // put setup code that runs once
-createCanvas(displayWidth, displayHeight)
+createCanvas(windowWidth, windowHeight)
  img = loadImage("assets/abba.jpg")
- console.log("10:43")
+ console.log("10:44")
 }
 
 function draw() {
@@ -14,7 +14,7 @@ function draw() {
 	background(255);
   // put drawing code here: runs 60 x per second
   //we need a color for the text
-  translate(displayWidth/2, displayHeight/2)
+  translate(windowWidth/2, windowHeight/2)
   image(img, 0,0)
  	
 
