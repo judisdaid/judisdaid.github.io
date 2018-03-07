@@ -4,7 +4,9 @@ var img
 
 function setup() {
   // put setup code that runs once
+createCanvas(displayWidth, displayHeight)
  img = loadImage("assets/abba.jpg")
+ console.log("10:43")
 }
 
 function draw() {
@@ -17,6 +19,7 @@ function draw() {
  	
 
 }
+
 
 
 
