@@ -51,7 +51,7 @@ text_area = document.getElementById("compass_content");
 	}
 window.onload = function() {
 audio = document.getElementById("audio");
-audio.oncanplay(){
+audio.oncanplay =  function(){
     audio.play()   
 } 
 
