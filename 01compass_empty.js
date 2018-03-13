@@ -52,10 +52,10 @@ text_area = document.getElementById("compass_content");
 
     console.log("window loaded")
     audio = document.getElementById("audio");
-  document.body.onclick = function() {
+
         audio.play()   
-  }
-    console.log("updated now")
+  
+    console.log("updated now 2")
 
 
 
