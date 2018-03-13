@@ -49,5 +49,9 @@ text_area = document.getElementById("compass_content");
             text_area.textContent = "empty compass";
         
 	}
+window.onload = function() {
+audio = document.getElementById("audio");
+if(audio.canPlay()) audio.play()
 
+}
 
