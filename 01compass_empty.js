@@ -49,7 +49,7 @@ text_area = document.getElementById("compass_content");
             text_area.textContent = "empty compass";
         
 	}
-window.onload = function() {
+
     console.log("window loaded")
     audio = document.getElementById("audio");
     audio.oncanplay =  function(){
@@ -57,5 +57,5 @@ window.onload = function() {
         audio.play()   
     } 
 
-}
+
 
