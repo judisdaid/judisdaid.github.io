@@ -50,10 +50,11 @@ text_area = document.getElementById("compass_content");
         
 	}
 window.onload = function() {
-audio = document.getElementById("audio");
-audio.oncanplay =  function(){
-    audio.play()   
-} 
+    audio = document.getElementById("audio");
+    audio.oncanplay =  function(){
+        console.log("can play")
+        audio.play()   
+    } 
 
 }
 
