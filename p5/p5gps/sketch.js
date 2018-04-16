@@ -6,6 +6,7 @@ function setup() {
 }
 
 function draw() {
+	background(255,255,255)
   // put drawing code here
   fill(50);
   textSize(100)
@@ -24,7 +25,7 @@ have_coordinates = function(position) {
 		console.log(position);
 
 		//populate html tag based on location
-		document.getElementById("gps_content").innerHTML = "My current position is " + lat + " , " + lon;
+		//document.getElementById("gps_content").innerHTML = "My current position is " + lat + " , " + lon;
 	
 	}
 
