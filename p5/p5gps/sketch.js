@@ -2,7 +2,8 @@ var lat;
 var lon;
 
 function setup() {
-	console.log("7:54")
+	createCanvas(window.innerWidth, window.innerHeight, P2D);
+	console.log("7:55")
 	lat = 0
 	lon = 0
   // put setup code here
