@@ -2,6 +2,7 @@ var lat;
 var lon;
 
 function setup() {
+	console.log("7:53")
   // put setup code here
 }
 
@@ -12,7 +13,7 @@ function draw() {
   textSize(100)
   textAlign(CENTER)
   translate(width/2, height/2)
-  text(lat, 0, 0);
+  text("lat: " + lat, 0, 0);
   text(lon, 100, 0);
 }
 
