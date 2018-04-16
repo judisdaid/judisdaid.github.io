@@ -2,7 +2,9 @@ var lat;
 var lon;
 
 function setup() {
-	console.log("7:53")
+	console.log("7:54")
+	lat = 0
+	lon = 0
   // put setup code here
 }
 
