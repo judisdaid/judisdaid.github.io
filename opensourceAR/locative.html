@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>GeoAR.js demo</title>
+     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://rawgit.com/bryik/aframe-bmfont-text-component/master/dist/aframe-bmfont-text-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script> 
+   
+<script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script> 
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  </head>
+
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene
+      vr-mode-ui="enabled: false"
+      embedded
+      arjs="sourceType: webcam; debugUIEnabled: false;"
+    >
+        <a-assets>
+      <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
+        <img id="glitter" src="https://img.gs/bbrwgpptkn/crop/https://mixedrealities.org/opensourceAR/aframe/examples/assets/glitter.jpeg" crossorigin="anonymous" />
+    </a-assets>
+   
+      <a-text
+        value="memorable \n ride"
+        look-at="[gps-camera]"
+        scale="120 120 120"
+        rotation="50 90 0" 
+        position="0 200 0"
+        gps-entity-place="latitude:  41.980975; longitude: -87.668173"
+      ></a-text>
+       <a-text
+        value="black bunny \n latched to my toes"
+        look-at="[gps-camera]"
+        scale="120 120 120"
+        rotation="10 20 0" 
+        position="0 400 0"
+        gps-entity-place="latitude:   41.985528; longitude:  -87.652740"
+      ></a-text>
+      <a-entity 
+      look-at="[gps-camera]"
+      scale="20 20 20"
+      position= "300 240 0"
+      text-geometry="value: festive mask; font: #optimerBoldFont;" 
+      gps-entity-place="latitude:  41.981051; longitude: -87.667751"
+      material="src: #glitter">
+      </a-entity>
+       <a-entity 
+      look-at="[gps-camera]"
+      scale="20 20 20"
+      position= "0 140 0"
+      text-geometry="value: lintelling; font: #optimerBoldFont;" 
+      gps-entity-place="latitude: 41.985447; longitude: -87.665863"
+      material="color:  white">
+
+      </a-entity>
+
+      <a-entity 
+      look-at="[gps-camera]"
+      scale="20 20 20"
+      position= "0 600 0"
+      text-geometry="value: ear to the filtering; font: #optimerBoldFont;" 
+      gps-entity-place="latitude: 41.9830916; longitude: -87.6651872"
+      material="color:  white">
+
+      </a-entity>
+
+     
+      <a-camera gps-camera rotation-reader> </a-camera>
+    </a-scene>
+  </body>
+</html>

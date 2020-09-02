@@ -1,0 +1,73 @@
+<!-- Augmented Reality on the Web in 10 lines of html! https://github.com/jeromeetienne/ar.js -->
+ <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+ <script src="https://rawgit.com/bryik/aframe-bmfont-text-component/master/dist/aframe-bmfont-text-component.min.js"></script>
+
+<script src="../build/aframe-ar.min.js"></script>
+<script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script> 
+<script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script> 
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene id="scene" embedded arjs='sourceType: webcam;'>
+		<a-assets>
+      <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
+      <img id="pink" src="https://img.gs/bbdkhfbzkk/stretch/https://mixedrealities.org/textures/pink.jpg" crossorigin="anonymous" />
+       <img id="kjell" src="https://img.gs/bbrwgpptkn/crop/https://mixedrealities.org/textures/memorableride.jpeg" crossorigin="anonymous" />
+    </a-assets>
+  <!--<a-entity position="-1 1 -2" text-geometry="value: memorable ride; font: #optimerBoldFont;" material="src: #kjell"></a-entity>
+	 <a-entity position="0 1.5 -0.5" rotation="0 45 0" text="anchor: center; width: 1.5; color: #ff0000; value: [CENTER]">
+</a-entity>-->
+    <!--<a-text
+    value="Hello"
+    position="0.05 0.80 -4"
+    rotation="45 45 0"
+ 
+    color="#000000"
+    side="double"
+    align="center"
+    width="12">-->
+</a-text>
+    <a-box width="0.25" height="0.25" depth="0.25" position="-0.25 2.0 0.75" rotation="90 -90 0" color="#4CC3D9"></a-box>
+    <a-sphere position="0 0.3125 -1.25" radius="0.3125" color="#EF2D5E"></a-sphere>
+    <a-cylinder position="0.25 0.1875 -0.75" radius="0.125" height="0.375" color="#FFC65D"></a-cylinder>
+    <a-plane position="0 0 -1" rotation="-90 0 0" width="1" height="1" color="#7BC8A4" shadow></a-plane>
+  </a-scene>
+  <script>
+    text = "memorableride";
+    t = text.split("");
+    radius = 20;
+    angle = 0;
+    angleIncrement = Math.PI * 2 / t.length;
+    for(j=0; j<5;j++) {
+      for(i=0; i<t.length; i++) {
+        poem = document.createElement("a-entity");
+        loc_x = radius * Math.cos(angle);
+        loc_y = -5;
+        loc_z = radius * Math.sin(angle);
+        poem.setAttribute("position", loc_x + " " + (loc_y+(j*2)) + " " + loc_z);
+        poem.setAttribute("text-geometry", 
+      "value:"+t[i]+"; font: #optimerBoldFont; size: 2.0");
+        poem.setAttribute("material", "src: #kjell")
+      //  theta_y =  Math.atan2(loc_x,loc_z);
+        poem.setAttribute("look-at", "[camera]")
+          iId = "poem" + i
+        poem.setAttribute("id", iId)
+         poem.setAttribute("animation", "property: rotation; to: 0 360 0; loop: true; dur: 10000");
+        document.getElementById("scene").appendChild(poem);
+        angle += angleIncrement;
+      }
+}
+
+    po = document.createElement("a-text")
+    po.setAttribute("position", "0 1.5 0.5")
+     po.setAttribute("rotation", "0 0 0")
+    po.setAttribute("value", "memorable ride")
+    po.setAttribute("align", "center")
+   
+    po.setAttribute("color", "#000000")
+    po.setAttribute("width", "4")
+    document.getElementById("scene").appendChild(po)
+
+
+
+
+  </script>
+</body>
