@@ -2,6 +2,7 @@
   <head>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="aframe-ar.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script> 
   </head>
   <body>
     <a-scene embedded arjs='sourceType: webcam;'>
@@ -66,7 +67,9 @@
     width="12">
   </a-text>
 
-<a-entity position="0 4 -4" geometry="primitive: box; width: 1" material="src: url(assets/cecilia.png)"></a-entity>
+<a-entity position="0 4 -4" geometry="primitive: box; width: 0.2" material="src: url(assets/cecilia.png)"></a-entity>
+
+<a-entity position="0 4 -4" text-geometry="value: her sweat knows" material="src: url(assets/cecilia.png)"></a-entity>
 
 
 
