@@ -1,7 +1,7 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://raw.github.com/jeromeetienne/AR.js/blob/master/aframe/build/aframe-ar.min.js"></script>
+    <script src="aframe-ar.min.js"></script>
   </head>
   <body>
     <a-scene embedded arjs='sourceType: webcam;'>
@@ -38,7 +38,7 @@
     position="4 2.0 0"
     rotation="0 -90 0"
  
-    color="#444444"
+    color="#ffffff"
     side="double"
     align="center"
     width="12">
@@ -49,7 +49,7 @@
     position="-4 2.0 0"
     rotation="0 90 0"
  
-    color="#999999"
+    color="#ffffff"
     side="double"
     align="center"
     width="12">
@@ -60,12 +60,13 @@
     position="0 8.0 0"
     rotation="90 0 0"
  
-    color="#999999"
+    color="#ffffff"
     side="double"
     align="center"
     width="12">
   </a-text>
 
+<a-entity position="0 4 -4" geometry="primitive: box; width: 1" material="src: url(assets/cecilia.jpg)></a-entity>
 
 
 
